@@ -1,3 +1,4 @@
+/* Adding fonts */
 @font-face {
   font-family: "Proxima Nova Regular";
   src: url("../fonts/Proxima+Nova+Regular.otf") format("opentype");
@@ -30,14 +31,14 @@ header {
   background-size: 100%;
 }
 
-/* Styles for about-us section */
-
+/* Styles for about us section */
 .about-us-section {
   background-color: white;
   display: flex;
   flex-direction: row;
 }
 
+/* Yellow rectangle */
 .rectangle {
   position: absolute;
   width: 59.19px;
@@ -59,11 +60,8 @@ header {
   font-family: Banny;
   font-size: 36px;
   line-height: 48px;
-  /* or 133% */
-
   text-align: center;
   text-transform: uppercase;
-
   color: #000000;
 }
 
@@ -91,7 +89,6 @@ header {
 }
 
 /* Styles for navigation buttons */
-
 .navigation {
   display: flex;
   flex-direction: row;
@@ -123,6 +120,7 @@ header {
   width: 150px;
 }
 
+/* Style for horizontal lines*/
 .left-horizontal-line {
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 530px;
@@ -139,6 +137,7 @@ header {
   top: 100px;
 }
 
+/* Styles for aside text in header*/
 .aside-section-text {
   position: absolute;
   left: 0px;
@@ -149,15 +148,13 @@ header {
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
-  /* or 100% */
-
   text-align: center;
-
   color: #ffffff;
 
   transform: rotate(-90deg);
 }
 
+/* Styles for word "RESTAURANT" */
 .restaurant-type-title {
   font-family: Open Sans;
   font-style: normal;
@@ -172,6 +169,7 @@ header {
   text-align: center;
 }
 
+/* Styles for restaurant name */
 .restaurant-name-title-section {
   text-align: center;
   margin: 0px 80px;
@@ -185,12 +183,14 @@ header {
   color: white;
 }
 
+/* Styles for two buttons under the tutle */
 .header-buttons {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
+/* Universal button's styles */
 .header-button {
   font-family: Open Sans;
   font-style: normal;
@@ -220,6 +220,7 @@ header {
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
 
+/* Style for contacts bar */
 .messenger-contacts {
   height: 220px;
   width: 60px;
