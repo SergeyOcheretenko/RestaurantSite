@@ -1,3 +1,48 @@
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/Proxima+Nova+Regular.otf") format("opentype");
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+header {
+  width: 1440px;
+  height: 800px;
+  background: url(../img/header-bg.png) no-repeat;
+  background-size: 100%;
+}
+
+.about-us-section {
+  background-color: white;
+}
+
+.rectangle {
+  position: absolute;
+  width: 59.19px;
+  height: 5px;
+  left: 378.58px;
+  top: 1073px;
+  background: #e8c300;
+  border-radius: 50px;
+  margin: 0 0;
+}
+
+.about-us {
+  width: 600px;
+  margin: 217px 81px;
+  text-align: center;
+}
+
+.about-us-title {
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
 }
