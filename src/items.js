@@ -1,4 +1,4 @@
-[
+const data = `[
 {
     "id": 1,
     "type": "pizza",
@@ -29,7 +29,7 @@
 {
     "id": 5,
     "type": "pizza",
-    "name": "BBG",
+    "name": "BBQ",
     "weight": 850,
     "dm": 35
 },
@@ -91,4 +91,4 @@
     "weight": 255
 }
 
-]
+]`
