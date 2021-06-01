@@ -681,10 +681,11 @@ header {
 .private-events-section {
   background: url(../img/events-bg.png) no-repeat;
   width: 100%;
-  height: 675px;
+  height: 6s75px;
 }
 
 .private-events-title {
+  margin: 0px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -707,6 +708,7 @@ header {
   margin-left: 205px;
   width: 395px;
   height: 475px;
+  filter: drop-shadow(0px 0px 50px #000000);
 }
 
 .first-event-title {
@@ -721,7 +723,7 @@ header {
   color: #ffffff;
   position: absolute;
   left: 409px;
-  top: 4911px;
+  top: 4887px;
   transform: rotate(90deg);
 }
 
@@ -736,13 +738,41 @@ header {
   text-indent: 30px;
   color: #ffffff;
   position: absolute;
-  left: 569px;
-  top: 4911px;
+  left: 572px;
+  top: 4887px;
   transform: rotate(-90deg);
 }
 
 .second-private-event {
+  margin: 0px;
   margin-left: 240px;
   width: 395px;
   height: 475px;
+  filter: drop-shadow(0px 0px 50px #000000);
+}
+
+.yellow-border-box-first-event {
+  position: absolute;
+  left: 83px;
+  top: 4820px;
+}
+
+.yellow-border-box-second-event {
+  position: absolute;
+  left: 1110px;
+  top: 4820px;
+}
+
+.private-event-contacts {
+  margin: 0px;
+  line-height: 100px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 5px;
 }
