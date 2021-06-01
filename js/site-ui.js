@@ -31,18 +31,16 @@ class UI {
       element.appendChild(weight);
       this.menu.appendChild(element);
     };
-    if (bigArray.length > 21 && !this.checker) 
-    {
-      const more = document.createElement('div');
-      more.className = 'more';
-      more.innerText = 'View more';
-      more.onclick = UI.viewMoreLess;
-      this.menu.appendChild(more);
-    };
+    const more = document.createElement('div');
+    more.className = 'more';
+    more.onclick = UI.viewMoreLess;
+    if (!this.checker) more.innerText = 'View more';
+    else more.innerText = 'View less';
+    if (bigArray.length > 21) this.menu.appendChild(more);
   };
   static viewMoreLess() {
-    UI.checker = !this.checker;
-    document.getElementsByClassName('more')[0].style.display = 'none';
+    UI.checker = !UI.checker;
+    UI.clear_menu();
     UI.draw_menu(UI.last);
   };
   static clear_menu() {
