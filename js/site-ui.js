@@ -9,7 +9,11 @@ class UI {
   static draw_menu(bigArray) {
     this.last = bigArray;
     let array = bigArray;
-    if (array.length > 21 && !this.checker) array = array.slice(0, 21);
+    const onerow = 3;
+    let rows;
+    if ( !this.checker ) rows = 5;
+    else rows = 9;
+    array = array.slice(0, rows * onerow);
     for ( let one of array )
     {
       const element = document.createElement('div');
@@ -54,5 +58,22 @@ class UI {
   static sort() {
     this.clear_menu();
     this.draw_menu(api.sortByWeigth());
+  };
+  static formInfo() {
+    const responce = form.getBookTableData();
+    if ( !responce ) this.formSuccess();
+    else this.formError(responce);
+  };
+  static formSuccess () {
+    const formfield = document.getElementsByClassName('contacts-section')[0];
+    const succesText = document.createElement('h2');
+    succesText.className = 'contacts-title';
+    succesText.innerText = 'Sent succesfully!';
+    formfield.innerHTML = '';
+    formfield.appendChild(succesText);
+  };
+  static formError (key) {
+    const field = document.getElementsByClassName('contacts-subtitle')[0];
+    field.innerText = `Validation error in ${key}!`;
   };
 };

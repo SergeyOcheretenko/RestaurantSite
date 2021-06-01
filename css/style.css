@@ -887,6 +887,9 @@ input {
   text-transform: uppercase;
   text-align: center;
 }
+.contact-send-message:hover {
+  cursor: pointer;
+}
 
 .contact-link {
   font-family: Open Sans;
