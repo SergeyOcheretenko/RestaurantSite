@@ -169,4 +169,4 @@ const data = `[
     "weight": 370
 }
 
-]`
+]`;

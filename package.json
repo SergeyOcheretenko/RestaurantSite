@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-site",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix && prettier --write \"**/*.js\" \"**/*.json\""
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "prettier": "^2.3.0"
+  }
+}
