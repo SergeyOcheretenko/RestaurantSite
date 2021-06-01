@@ -613,6 +613,13 @@ header {
   transition: 0.5s;
 }
 
+.sort {
+  color: red;
+}
+.sort:hover {
+  color: black;
+}
+
 .menu-vertical-line {
   width: 50px;
   height: 0px;

@@ -143,6 +143,30 @@ const data = `[
     "type": "drink",
     "name": "Mineral Ochka",
     "weight": 500
+},
+{
+    "id": 24,
+    "type": "wine",
+    "name": "Pinot Grigio",
+    "weight": 250
+},
+{
+    "id": 25,
+    "type": "wine",
+    "name": "Syrah",
+    "weight": 240
+},
+{
+    "id": 26,
+    "type": "pasta",
+    "name": "Alfredo",
+    "weight": 350
+},
+{
+    "id": 27,
+    "type": "pasta",
+    "name": "Ala norma",
+    "weight": 370
 }
 
 ]`
