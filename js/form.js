@@ -41,6 +41,11 @@ function validateDate(date) {
     return true;
 }
 
+function validateTime(time) {
+    const re = /^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
+    return re.test(time);
+}
+
 function getBookTableData() {
     const name = document.getElementById('book-table-name').value;
     const email = document.getElementById('book-table-email').value;
