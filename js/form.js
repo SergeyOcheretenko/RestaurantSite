@@ -37,8 +37,8 @@ class form
                 };
                 const day = Number(value.substring(0, 2));
                 const month = Number(value.substring(3, 5));
-                if (isNaN(day) || isNaN(month) || !(date[2] == '.'
-                    || date[2] == ',' || date[2] == '/')
+                if (isNaN(day) || isNaN(month) || !(value[2] == '.'
+                    || value[2] == ',' || value[2] == '/')
                     || day < 1 || month < 1 || month > 12
                     || day > daysInMonth[month]) responce = false;
                 break;
