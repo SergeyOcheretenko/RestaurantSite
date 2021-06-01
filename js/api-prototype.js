@@ -1,4 +1,4 @@
-class API_prot {
+class ProtAPI {
   constructor() {
     this.items = JSON.parse(data);
     this.byType = null;
