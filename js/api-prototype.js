@@ -1,20 +1,18 @@
-
 class API_prot 
 {
-    constructor ( path )
+    constructor ( )
     {
-        this.file = require ( path );
-        this.items = JSON.parse ( this.file );
+        this.items = JSON.parse ( data );
         this.byType = null;
     };
 
-    getByType ( type )
+    static getByType ( type )
     {
         this.byType = this.items.filter ( item => item.type == type );
         return this.byType;
     };
 
-    sortByWeigth ( )
+    static sortByWeigth ( )
     {
         let res;
         const sorter = ( f, s ) =>
