@@ -1,4 +1,5 @@
 const http = require('http');
+const form = require('./server-form.js');
 class API
 {
     constructor ()
@@ -14,6 +15,17 @@ class API
         xmlHttp.open('GET', this.serverpath + request, true);
         xmlHttp.send(null);
         return xmlHttp.responseText;
+    };
+    static post (data, request)
+    {
+        const xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('POST', this.serverpath + request, true);
+        xmlHttp.send(data);
+    };
+    static postForm ( obj, request )
+    {
+        const strObj = JSON.stringify(obj);
+        this.post(strObj, request);
     };
     static getMenu ()
     {
