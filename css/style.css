@@ -128,9 +128,15 @@ input {
 
 .navigation-button {
   width: 133px;
-  height: 100px;
+  height: 92px;
   color: white;
-  line-height: 100px;
+  line-height: 92px;
+}
+
+.navigation-button:hover {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
 }
 
 .image-anchor {
