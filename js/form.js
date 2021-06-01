@@ -85,5 +85,5 @@ class form
             here is nothing. in server-js here we send it to the server
         */
        return null;
-    }
+    };
 };

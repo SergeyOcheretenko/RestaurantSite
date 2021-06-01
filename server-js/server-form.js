@@ -65,4 +65,18 @@ class form
         API.postForm(data, 'book');
         return null;
     };
+    static getMessage () {
+        const data = {
+            name: document.getElementsByClassName('name')[0].value,
+            email: document.getElementsByClassName('email')[0].value,
+            phone: document.getElementsByClassName('phone')[0].value,
+            message: document.getElementsByClassName('mess')[0].value
+        };
+        for (const [key, value] of Object.entries(data))
+        {
+            if ( !this.validation(value, key) ) return key;
+        };
+        API.postForm(data, 'message');
+       return null;
+    };
 };
