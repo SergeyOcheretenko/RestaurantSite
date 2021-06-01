@@ -12,6 +12,11 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function validatePhone(phone) {
+    const re = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+    return re.test(phone);
+}
+
 function getBookTableData() {
     const name = document.getElementById('book-table-name').value;
     const email = document.getElementById('book-table-email').value;
