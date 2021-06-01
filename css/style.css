@@ -40,14 +40,17 @@ header {
 
 /* Yellow rectangle */
 .rectangle {
-  position: absolute;
-  width: 59.19px;
-  height: 5px;
-  left: 360px;
-  top: 1113px;
   background: #e8c300;
   border-radius: 50px;
   margin: 0px;
+  width: 59.19px;
+  height: 5px;
+}
+
+.rectangle-about-us {
+  position: absolute;
+  left: 360px;
+  top: 1113px;
 }
 
 .about-us {
@@ -316,11 +319,6 @@ header {
 }
 
 .rectangle-our-team {
-  background-color: #e8c300;
-  border-radius: 50px;
-  width: 59.19px;
-  height: 5px;
-  margin: 0px;
   position: absolute;
   left: 1030px;
   top: 1825px;
@@ -348,4 +346,105 @@ header {
   box-sizing: border-box;
   filter: drop-shadow(0px 0px 100px #000000);
   border-radius: 5px;
+}
+
+/* Styles for Book a table section */
+.book-a-table-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-a-table-main-content {
+  width: 565.49px;
+  height: 351px;
+  margin: 160px 0px 0px 135px;
+}
+
+.book-a-table-title {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 5px;
+  margin-bottom: 33px;
+}
+
+.clock-image {
+  width: 475px;
+  height: 475px;
+  margin: 100px 70px;
+  margin-bottom: 0px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.rectangle-book-a-table {
+  position: absolute;
+  left: 390px;
+  top: 2460px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.book-a-table-input {
+  width: 277.5px;
+  height: 60px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  text-indent: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-right: 10px;
+}
+
+.book-a-table-button {
+  width: 563.58px;
+  height: 60px;
+  background-color: #e8c300;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.yellow-border-box-book-a-table {
+  position: absolute;
+  left: 1125px;
+  top: 2422px;
+}
+
+.book-a-table-contacts {
+  line-height: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.important-text {
+  font-weight: bold;
 }
