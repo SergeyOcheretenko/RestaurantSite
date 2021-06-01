@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="navigation">
             <div class="left-buttons">
-                <div class="navigation-button header-button"><a>Home</a></div>
-                <div class="navigation-button header-button"><a>About</a></div>
-                <div class="navigation-button header-button"><a>Team</a></div>
-                <div class="navigation-button header-button"><a>Booking</a></div>
+                <a href="#home"><div class="navigation-button header-button">Home</div></a>
+                <a href="#about"><div class="navigation-button header-button">About</div></a>
+                <a href="#team"><div class="navigation-button header-button">Team</div></a>
+                <a href="#booking"><div class="navigation-button header-button">Booking</div></a>
             </div>
             <img class="image-anchor" src="img/Vector.png">
             <div class="right-buttons">
-                <div class="navigation-button header-button"><a>Menu</a></div>
-                <div class="navigation-button header-button"><a>Galerie</a></div>
-                <div class="navigation-button header-button"><a>Events</a></div>
-                <div class="navigation-button header-button"><a>Contact</a></div>
+                <a href="#menu"><div class="navigation-button header-button">Menu</div></a>
+                <a href="#galerie"><div class="navigation-button header-button">Galerie</div></a>
+                <a href="#events"><div class="navigation-button header-button">Events</div></a>
+                <a href="#contact"><div class="navigation-button header-button">Contact</div></a>
             </div>
         </div>
         <span class="left-horizontal-line"></span>
@@ -43,9 +43,9 @@
                 </div>
             
             <div class="messenger-contacts">
-                <a href="https://facebook.com" class="messenger-link"><img src="img/facebook.png"></a>
-                <a href="https://twitter.com" class="messenger-link"><img src="img/twitter.png"></a>
-                <a href="https://instagram.com" class="messenger-link"><img src="img/instagram.png"></a>
+                <a href="https://www.facebook.com/our.pain.5" class="messenger-link"><img src="img/facebook.png"></a>
+                <a href="https://twitter.com/our_paln" class="messenger-link"><img src="img/twitter.png"></a>
+                <a href="https://www.instagram.com/s.ocheretenko/" class="messenger-link"><img src="img/instagram.png"></a>
             </div>
         </div>
     </header>
@@ -53,7 +53,7 @@
 
         <!--  ABOUT US SECTION  -->
 
-        <div class="about-us-section">
+        <div class="about-us-section" id="about">
             <div class="about-us">
                 <h2 class="about-us-title">About us</h2>
                 <span class="rectangle rectangle-about-us"></span>
@@ -70,7 +70,7 @@
 
         <!--  OUR TEAM SECTION  -->
 
-        <div class="our-team-section">
+        <div class="our-team-section" id="team">
             <h3 class="our-team-title">Our team</h3>
             <div class="our-team-content">
                 <img src="img/master-chef.png" class="master-chef-image">
@@ -88,7 +88,7 @@
 
         <!--  BOOK A TABLE SECTION  -->
 
-        <div class="book-a-table-section">
+        <div class="book-a-table-section" id="booking">
             <div class="book-a-table-content">
                 <div class="book-a-table-main-content formfield">
                     <h2 class="book-a-table-title errors">Book a table</h2>
@@ -135,7 +135,7 @@
         </div>
 
         <!-- MENU SECTION -->
-        <div class="menu-section">
+        <div class="menu-section" id="menu">
             <h2 class="menu-title">Delicious menu</h2>
             <span class="rectangle rectangle-menu"></span>
             <p class="menu-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
@@ -168,7 +168,7 @@
         </div>
 
         <!-- PRIVAT EVENTS SECTION -->
-        <div class="private-events-section">
+        <div class="private-events-section" id="events">
             <h3 class="private-events-title">Private events</h3>
             <div class="private-events-images">
                 <img src="img/first-private-event.png" class="first-private-event">
@@ -182,7 +182,7 @@
         </div>
 
         <!-- GALERIE SECTION -->
-        <div class="galerie-section">
+        <div class="galerie-section" id="galerie">
             <img src="img/galerie-image-1.png" class="galerie-image">
             <img src="img/galerie-image-2.png" class="galerie-image">
             <img src="img/galerie-image-3.png" class="galerie-image">
@@ -190,7 +190,8 @@
         </div>
 
         <!-- CONTACTS SECTION -->
-        <div class="contacts-section formfield">
+        <div class="contacts-section formfield"  id="contact">
+
             <h2 class="contacts-title">Contact</h2>
             <p class="contacts-subtitle errors">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
             <div class="contacts-inputs-row">
