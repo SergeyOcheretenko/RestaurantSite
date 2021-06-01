@@ -3,8 +3,9 @@ class UI {
     this.menu = document.getElementsByClassName('menu')[ 0 ];
     this.clear_menu();
     this.draw_menu(api.items);
-  }
-  static draw_menu(array) {
+  };
+  static draw_menu(bigArray) {
+    let array = bigArray;
     if (array.length > 21) array = array.slice(0, 21);
     array.forEach(one => {
       const element = document.createElement('div');
@@ -26,17 +27,17 @@ class UI {
       element.appendChild(weight);
       this.menu.appendChild(element);
     });
-  }
+  };
   static clear_menu() {
     this.menu.innerHTML = '';
-  }
+  };
   static switch_type(type) {
     const arr = api.getByType(type);
     this.clear_menu();
     this.draw_menu(arr);
-  }
+  };
   static sort() {
     this.clear_menu();
     this.draw_menu(api.sortByWeigth());
-  }
-}
+  };
+};

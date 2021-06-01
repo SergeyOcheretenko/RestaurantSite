@@ -3,12 +3,12 @@ class API_prot {
     this.items = JSON.parse(data);
     this.byType = null;
     this.sorted = false;
-  }
+  };
 
   getByType(type) {
     this.byType = this.items.filter(item => item.type == type);
     return this.byType;
-  }
+  };
 
   sortByWeigth() {
     let res;
@@ -21,5 +21,5 @@ class API_prot {
     else res = this.items;
     this.sorted = !this.sorted;
     return res.sort(sorter);
-  }
-}
+  };
+};
