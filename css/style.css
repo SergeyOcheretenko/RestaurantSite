@@ -40,14 +40,17 @@ header {
 
 /* Yellow rectangle */
 .rectangle {
-  position: absolute;
-  width: 59.19px;
-  height: 5px;
-  left: 360px;
-  top: 1113px;
   background: #e8c300;
   border-radius: 50px;
   margin: 0px;
+  width: 59.19px;
+  height: 5px;
+}
+
+.rectangle-about-us {
+  position: absolute;
+  left: 360px;
+  top: 1113px;
 }
 
 .about-us {
@@ -267,7 +270,7 @@ header {
   color: #ffffff;
 }
 
-/* Style for other content in our team section */
+/* Style for other content in "Our team" section */
 .our-team-content {
   display: flex;
   flex-direction: row;
@@ -316,11 +319,6 @@ header {
 }
 
 .rectangle-our-team {
-  background-color: #e8c300;
-  border-radius: 50px;
-  width: 59.19px;
-  height: 5px;
-  margin: 0px;
   position: absolute;
   left: 1030px;
   top: 1825px;
@@ -348,4 +346,343 @@ header {
   box-sizing: border-box;
   filter: drop-shadow(0px 0px 100px #000000);
   border-radius: 5px;
+}
+
+/* Styles for "Book a table" section */
+.book-a-table-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-a-table-main-content {
+  width: 565.49px;
+  height: 351px;
+  margin: 160px 0px 0px 135px;
+}
+
+.book-a-table-title {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 5px;
+  margin-bottom: 33px;
+}
+
+.clock-image {
+  width: 475px;
+  height: 475px;
+  margin: 100px 70px;
+  margin-bottom: 0px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.rectangle-book-a-table {
+  position: absolute;
+  left: 390px;
+  top: 2460px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.book-a-table-input {
+  width: 277.5px;
+  height: 60px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  text-indent: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-right: 10px;
+}
+
+.book-a-table-button {
+  width: 563.58px;
+  height: 60px;
+  background-color: #e8c300;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.yellow-border-box-book-a-table {
+  position: absolute;
+  left: 1125px;
+  top: 2422px;
+}
+
+.book-a-table-contacts {
+  line-height: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.important-text {
+  font-weight: bold;
+}
+
+/* Style for "Specialties" section */
+.specialties-section {
+  background: url(../img/specialty-bg.png) no-repeat;
+  height: 676px;
+}
+
+/* Styles for title "Specialties" */
+.specialties-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Style for other content in "Specialties" section */
+.specialties-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.pancakes-image {
+  margin: 0px;
+  margin-left: 195px;
+  filter: drop-shadow(0px 0px 50px #000000);
+  border-radius: 5px;
+  width: 475px;
+  height: 475px;
+}
+
+.specialties-text {
+  padding: 2px 10px;
+  margin-top: 120px;
+  margin-left: 70px;
+  width: 600px;
+  height: 240px;
+}
+
+.specialties-text-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.specialties-text-subtitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rectangle-specialties {
+  position: absolute;
+  left: 1030px;
+  top: 3200px;
+}
+
+.specialties-main-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yellow-border-box-specialties {
+  position: absolute;
+  left: 80px;
+  top: 3135px;
+
+  border: 20px solid #e8c300;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 100px #000000);
+  border-radius: 5px;
+}
+
+/* Styles for "Menu" section */
+.menu-section {
+  height: 920px;
+}
+
+.menu-title {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.rectangle-menu {
+  position: absolute;
+  left: 700px;
+  top: 3748px;
+}
+
+.menu-subtitle {
+  width: 565px;
+  text-align: center;
+  margin: 30px 438px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.menu-buttons-block {
+  margin: 20px 300px;
+  width: 840px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-button {
+  background: rgba(0, 0, 0, 0);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  width: 120px;
+  height: 50px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #333333;
+}
+
+.menu-vertical-line {
+  width: 50px;
+  height: 0px;
+  margin-top: 30px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  transform: rotate(90deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-column-first {
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.menu-item {
+  margin-top: 0px;
+  padding: 0px;
+  width: 280px;
+  height: 66px;
+  font-family: Banny;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.price-column-first {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.price-item {
+  width: 105px;
+  height: 66px;
+  padding: 0px;
+  font-family: Banny;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.menu-column-second {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.price-column-second {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.menu-column-third {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.price-column-third {
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.dish-discribe {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.dish-name {
+  margin-bottom: 0px;
 }
