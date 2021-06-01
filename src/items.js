@@ -389,6 +389,66 @@ const data = `[
     "type": "pasta",
     "name": "Ravioli",
     "weight": 240
+}, 
+{
+    "id": 65,
+    "type": "sushi",
+    "name": "Gunkan maki",
+    "weight": 190
+}, 
+{
+    "id": 66,
+    "type": "sushi",
+    "name": "Sashimi",
+    "weight": 180
+}, 
+{
+    "id": 67,
+    "type": "sushi",
+    "name": "Maki",
+    "weight": 180
+}, 
+{
+    "id": 68,
+    "type": "sushi",
+    "name": "Tiger Roll",
+    "weight": 180
+}, 
+{
+    "id": 69,
+    "type": "sushi",
+    "name": "Crunch Roll",
+    "weight": 180
+}, 
+{
+    "id": 70,
+    "type": "sushi",
+    "name": "Spider Roll",
+    "weight": 190
+}, 
+{
+    "id": 71,
+    "type": "sushi",
+    "name": "Tempura Roll",
+    "weight": 200
+}, 
+{
+    "id": 72,
+    "type": "sushi",
+    "name": "Vegetable Roll",
+    "weight": 170
+}, 
+{
+    "id": 73,
+    "type": "sushi",
+    "name": "ALASKA ROLL",
+    "weight": 190
+}, 
+{
+    "id": 74,
+    "type": "sushi",
+    "name": "LEMON ROLL",
+    "weight": 170
 }
 
 ]`
