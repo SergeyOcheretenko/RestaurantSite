@@ -141,7 +141,7 @@ const data = `[
 {
     "id": 23,
     "type": "drink",
-    "name": "Mineral Ochka",
+    "name": "Mineralochka",
     "weight": 500
 },
 {
@@ -167,6 +167,120 @@ const data = `[
     "type": "pasta",
     "name": "Ala norma",
     "weight": 370
+},
+{
+    "id": 28,
+    "type": "sushi",
+    "name": "California",
+    "weight": 280
+},
+{
+    "id": 29,
+    "type": "desert",
+    "name": "Cheesecake",
+    "weight": 190
+},
+{
+    "id": 30,
+    "type": "desert",
+    "name": "Eclairs",
+    "weight": 220
+},
+{
+    "id": 31,
+    "type": "drink",
+    "name": "Green tea",
+    "weight": 500
+},
+{
+    "id": 32,
+    "type": "drink",
+    "name": "Black tea",
+    "weight": 500
+},
+{
+    "id": 33,
+    "type": "drink",
+    "name": "Fruit tea",
+    "weight": 500
+},
+{
+    "id": 34,
+    "type": "drink",
+    "name": "Juice",
+    "weight": 200
+}, 
+{
+    "id": 35,
+    "type": "drink",
+    "name": "Milkshake",
+    "weight": 250
+}, 
+{
+    "id": 36,
+    "type": "desert",
+    "name": "Panna cotta",
+    "weight": 220
+}, 
+{
+    "id": 37,
+    "type": "desert",
+    "name": "Chocolate fondant",
+    "weight": 230
+}, 
+{
+    "id": 38,
+    "type": "desert",
+    "name": "Fruit salad",
+    "weight": 270
+}, 
+{
+    "id": 39,
+    "type": "desert",
+    "name": "Ice cream",
+    "weight": 120
+}, 
+{
+    "id": 40,
+    "type": "beer",
+    "name": "Blanc 1664",
+    "weight": 500
+}, 
+{
+    "id": 41,
+    "type": "beer",
+    "name": "Staropramen",
+    "weight": 500
+}, 
+{
+    "id": 42,
+    "type": "beer",
+    "name": "Heineken",
+    "weight": 330
+}, 
+{
+    "id": 43,
+    "type": "beer",
+    "name": "Corona extra",
+    "weight": 300
+}, 
+{
+    "id": 44,
+    "type": "beer",
+    "name": "Kozel",
+    "weight": 500
+}, 
+{
+    "id": 45,
+    "type": "beer",
+    "name": "Garage",
+    "weight": 500
+}, 
+{
+    "id": 46,
+    "type": "beer",
+    "name": "Lvivske 1715",
+    "weight": 500
 }
 
 ]`
