@@ -31,6 +31,19 @@ header {
   background-size: 100%;
 }
 
+input {
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 20px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
 /* Styles for about us section */
 .about-us-section {
   background-color: white;
@@ -397,22 +410,11 @@ header {
 .book-a-table-input {
   width: 277.5px;
   height: 60px;
-  background: #e5e5e5;
-  border-radius: 5px;
-  border: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  align-items: center;
-  text-indent: 20px;
-  color: rgba(51, 51, 51, 0.5);
   margin-right: 10px;
 }
 
 .book-a-table-button {
-  width: 563.58px;
+  width: 556px;
   height: 60px;
   background-color: #e8c300;
   border: none;
@@ -424,7 +426,6 @@ header {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
-  align-items: center;
   text-align: center;
 }
 
@@ -685,6 +686,7 @@ header {
 }
 
 .private-events-title {
+  margin: 0px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -707,6 +709,7 @@ header {
   margin-left: 205px;
   width: 395px;
   height: 475px;
+  filter: drop-shadow(0px 0px 50px #000000);
 }
 
 .first-event-title {
@@ -721,7 +724,7 @@ header {
   color: #ffffff;
   position: absolute;
   left: 409px;
-  top: 4911px;
+  top: 4887px;
   transform: rotate(90deg);
 }
 
@@ -736,13 +739,159 @@ header {
   text-indent: 30px;
   color: #ffffff;
   position: absolute;
-  left: 569px;
-  top: 4911px;
+  left: 572px;
+  top: 4887px;
   transform: rotate(-90deg);
 }
 
 .second-private-event {
+  margin: 0px;
   margin-left: 240px;
   width: 395px;
   height: 475px;
+  filter: drop-shadow(0px 0px 50px #000000);
+}
+
+.yellow-border-box-first-event {
+  position: absolute;
+  left: 83px;
+  top: 4820px;
+}
+
+.yellow-border-box-second-event {
+  position: absolute;
+  left: 1110px;
+  top: 4820px;
+}
+
+.private-event-contacts {
+  margin: 0px;
+  line-height: 100px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 5px;
+}
+
+/* Style for "Galerie" section */
+.galerie-section {
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style for "Contacts" section */
+.contacts-section {
+  height: 560px;
+}
+
+.contacts-title {
+  font-family: Banny;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts-subtitle {
+  width: 565px;
+  margin-top: 25px;
+  margin-left: 437.5px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+}
+
+.contacts-inputs-row {
+  width: 1280px;
+  margin: 50px 85px 0px 85px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts-input {
+  width: 420px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.message-input {
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 85px;
+  width: 1250px;
+  height: 120px;
+}
+
+.contacts-block {
+  width: 1280px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.contacts-links {
+  margin-left: 28px;
+  width: 640px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-send-message {
+  width: 640px;
+  height: 60px;
+  background-color: #e8c300;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 60px;
+  color: rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+  padding: 0px 15px;
+}
+
+/* Styles for footer */
+
+.footer-subtitle {
+  height: 100px;
+  width: 1440px;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
 }
