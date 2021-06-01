@@ -94,18 +94,18 @@
                     <h2 class="book-a-table-title">Book a table</h2>
                     <span class="rectangle rectangle-book-a-table"></span>
                     <div class="input-row">
-                        <input placeholder="Name" class="book-a-table-input"></input>
-                        <input placeholder="Email" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-name" placeholder="Name" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-email" placeholder="Email" class="book-a-table-input"></input>
                     </div>
                     <div class="input-row">
-                        <input placeholder="Phone" class="book-a-table-input"></input>
-                        <input placeholder="People" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-phone" placeholder="Phone" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-people" placeholder="People" class="book-a-table-input"></input>
                     </div>
                     <div class="input-row">
-                        <input placeholder="Date (mm/dd)" class="book-a-table-input"></input>
-                        <input placeholder="Time" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-date" placeholder="Date (for example 28.05)" class="book-a-table-input"></input>
+                        <input type="text" id="book-table-time" placeholder="Time (for example 15:10)" class="book-a-table-input"></input>
                     </div>
-                    <button class="book-a-table-button">Book now</button>
+                    <button class="book-a-table-button" onclick="setTimeout(getBookTableData(), 0);">Book now</button>
                 </div>
                 <img src="img/clock-img.png" class="clock-image">
                 <span class="yellow-border-box yellow-border-box-book-a-table"></span>
@@ -218,9 +218,10 @@
     <p class="footer-subtitle"><span class="important-text">Sergey Ocheretenko</span> and <span class="important-text">Avaztazia</span>, 2021</p>
    
     <script type="text/javascript" src="./src/items.js"></script>
-    <script type = "text/javascript" src="./js/api-prototype.js"></script>
-    <script type = "text/javascript" src="./index.js"></script>
-    <script type = "text/javascript" src="./js/site-ui.js"></script>
+    <script type="text/javascript" src="./js/api-prototype.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/site-ui.js"></script>
+    <script type="text/javascript" src="./js/form.js"></script>
 
 </body>
 </html>
