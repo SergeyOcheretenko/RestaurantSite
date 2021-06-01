@@ -4,6 +4,7 @@ class API_prot
     {
         this.items = JSON.parse ( data );
         this.byType = null;
+        this.sorted = false;
     };
 
     getByType ( type )
@@ -17,12 +18,13 @@ class API_prot
         let res;
         const sorter = ( f, s ) =>
         {
-            if ( f.weight > s.weight ) return 1;
-            if ( f.weight < s.weight ) return -1;
+            if ( ( f.weight > s.weight && !this.sorted ) || ( f.weight < s.weight && this.sorted ) ) return 1;
+            if ( ( f.weight < s.weight && !this.sorted ) || ( f.weight > s.weight && this.sorted ) ) return -1;
             return 0;
         };
-        if ( this.byType ) res = this.byType.sort ( sorter );
-        else res = this.items.sort ( sorter );
-        return res;
+        if ( this.byType ) res = this.byType;
+        else res = this.items;
+        this.sorted = !this.sorted;
+        return res.sort ( sorter );
     };
 };

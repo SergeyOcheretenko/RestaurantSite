@@ -8,6 +8,7 @@ class UI
     };
     static draw_menu ( array )
     {
+        if (array.length > 21) array = array.slice(0, 21);
         array.forEach ( one => {
             let element = document.createElement ( 'div' );
                 element.className = 'menu-item';
@@ -19,7 +20,8 @@ class UI
                 element.appendChild ( container );
             let desc = document.createElement ( 'p' );
                 desc.className = 'dish-describe';
-                desc.innerText = 'Integer ullamcorper neque eu purus';
+                if ( one.type != 'pizza' ) desc.innerText = 'Integer ullamcorper neque eu purus';
+                else desc.innerText = 'Diameter ' + one.dm + ' dm.';
                 container.appendChild ( desc );
             let weight = document.createElement ( 'h3' );
                 weight.className = 'price-item';
@@ -37,5 +39,10 @@ class UI
         const arr = api.getByType ( type );
         this.clear_menu ( );
         this.draw_menu ( arr );
+    };
+    static sort ( )
+    {
+        this.clear_menu ( );
+        this.draw_menu ( api.sortByWeigth ( ) );
     };
 }
