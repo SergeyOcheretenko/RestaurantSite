@@ -6,13 +6,13 @@ class API_prot
         this.byType = null;
     };
 
-    static getByType ( type )
+    getByType ( type )
     {
         this.byType = this.items.filter ( item => item.type == type );
         return this.byType;
     };
 
-    static sortByWeigth ( )
+    sortByWeigth ( )
     {
         let res;
         const sorter = ( f, s ) =>
