@@ -10,6 +10,7 @@ class UI {
     this.last = bigArray;
     let array = bigArray;
     if (array.length > 21 && !this.checker) array = array.slice(0, 21);
+    else if ( this.checker ) array = array.slice(0, 27);
     for ( let one of array )
     {
       const element = document.createElement('div');
