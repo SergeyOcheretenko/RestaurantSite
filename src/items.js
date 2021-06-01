@@ -281,6 +281,114 @@ const data = `[
     "type": "beer",
     "name": "Lvivske 1715",
     "weight": 500
+}, 
+{
+    "id": 47,
+    "type": "pasta",
+    "name": "Angel hair",
+    "weight": 270
+}, 
+{
+    "id": 48,
+    "type": "pasta",
+    "name": "Bucatini",
+    "weight": 290
+}, 
+{
+    "id": 49,
+    "type": "pasta",
+    "name": "Campanelle",
+    "weight": 280
+}, 
+{
+    "id": 50,
+    "type": "pasta",
+    "name": "Cannelloni",
+    "weight": 240
+}, 
+{
+    "id": 51,
+    "type": "pasta",
+    "name": "Casarecce",
+    "weight": 260
+}, 
+{
+    "id": 52,
+    "type": "pasta",
+    "name": "Cavatappi",
+    "weight": 280
+}, 
+{
+    "id": 53,
+    "type": "pasta",
+    "name": "Cavatelli",
+    "weight": 250
+}, 
+{
+    "id": 54,
+    "type": "pasta",
+    "name": "Ditalini",
+    "weight": 310
+}, 
+{
+    "id": 55,
+    "type": "pasta",
+    "name": "Farfalle",
+    "weight": 280
+}, 
+{
+    "id": 56,
+    "type": "pasta",
+    "name": "Fettuccine",
+    "weight": 300
+}, 
+{
+    "id": 57,
+    "type": "pasta",
+    "name": "Fusilli",
+    "weight": 270
+}, 
+{
+    "id": 58,
+    "type": "pasta",
+    "name": "Lasagna",
+    "weight": 230
+}, 
+{
+    "id": 59,
+    "type": "pasta",
+    "name": "Linguine",
+    "weight": 250
+}, 
+{
+    "id": 60,
+    "type": "pasta",
+    "name": "Macaroni",
+    "weight": 290
+}, 
+{
+    "id": 61,
+    "type": "pasta",
+    "name": "Orzo",
+    "weight": 230
+}, 
+{
+    "id": 62,
+    "type": "pasta",
+    "name": "Rigatoni",
+    "weight": 240
+}, 
+{
+    "id": 63,
+    "type": "pasta",
+    "name": "Pappardelle",
+    "weight": 220
+}, 
+{
+    "id": 64,
+    "type": "pasta",
+    "name": "Ravioli",
+    "weight": 240
 }
 
 ]`
