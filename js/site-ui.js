@@ -59,21 +59,23 @@ class UI {
     this.clear_menu();
     this.draw_menu(api.sortByWeigth());
   };
-  static formInfo() {
-    const responce = form.getBookTableData();
-    if ( !responce ) this.formSuccess();
-    else this.formError(responce);
+  static formInfo( numb ) {
+    let responce;
+    if ( !numb ) responce = form.getBookTableData();
+    else responce = form.getMessage();
+    if ( !responce ) this.formSuccess(numb);
+    else this.formError(responce, numb);
   };
-  static formSuccess () {
-    const formfield = document.getElementsByClassName('book-a-table-main-content')[0];
+  static formSuccess (numb) {
+    const formfield = document.getElementsByClassName('formfield')[numb];
     const succesText = document.createElement('h2');
     succesText.className = 'book-a-table-title';
     succesText.innerText = 'Sent succesfully!';
     formfield.innerHTML = '';
     formfield.appendChild(succesText);
   };
-  static formError (key) {
-    const field = document.getElementsByClassName('book-a-table-title')[0];
+  static formError (key, numb) {
+    const field = document.getElementsByClassName('errors')[numb];
     field.innerText = `Error in ${key}!`;
   };
 };

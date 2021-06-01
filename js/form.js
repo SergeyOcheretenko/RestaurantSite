@@ -46,6 +46,9 @@ class form
                 re = /^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
                 response = re.test(value);
                 break;
+            default:
+
+                break;
         };
         return response;
     };
@@ -67,4 +70,20 @@ class form
         */
        return null;
     };
+    static getMessage () {
+        const data = {
+            name: document.getElementsByClassName('name')[0].value,
+            email: document.getElementsByClassName('email')[0].value,
+            phone: document.getElementsByClassName('phone')[0].value,
+            message: document.getElementsByClassName('mess')[0].value
+        };
+        for (const [key, value] of Object.entries(data))
+        {
+            if ( !this.validation(value, key) ) return key;
+        };
+        /*
+            here is nothing. in server-js here we send it to the server
+        */
+       return null;
+    }
 };
