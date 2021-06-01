@@ -618,33 +618,30 @@ header {
 .menu {
   display: flex;
   flex-direction: row;
-}
-
-.menu-column-first {
-  margin-top: 50px;
-  margin-left: 90px;
+  flex-wrap: wrap;
+  margin: 0 10%;
 }
 
 .menu-item {
+  display: inline-flex;
+  justify-content: space-between;
   margin-top: 0px;
   padding: 0px;
-  width: 280px;
+  width: 360px;
   height: 66px;
   font-family: Banny;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
   text-transform: uppercase;
-}
-
-.price-column-first {
-  margin-top: 50px;
-  margin-left: 0px;
 }
 
 .price-item {
+  margin: 0;
   width: 105px;
-  height: 66px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   padding: 0px;
   font-family: Banny;
   font-size: 16px;
@@ -653,27 +650,7 @@ header {
   text-transform: uppercase;
 }
 
-.menu-column-second {
-  margin-top: 50px;
-  margin-left: 60px;
-}
-
-.price-column-second {
-  margin-top: 50px;
-  margin-left: 0px;
-}
-
-.menu-column-third {
-  margin-top: 50px;
-  margin-left: 60px;
-}
-
-.price-column-third {
-  margin-top: 50px;
-  margin-left: 0px;
-}
-
-.dish-discribe {
+.dish-describe {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
