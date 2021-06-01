@@ -1,4 +1,4 @@
-[
+const data = `[
 {
     "id": 1,
     "type": "pizza",
@@ -29,7 +29,7 @@
 {
     "id": 5,
     "type": "pizza",
-    "name": "BBG",
+    "name": "BBQ",
     "weight": 850,
     "dm": 35
 },
@@ -89,6 +89,60 @@
     "type": "sushi",
     "name": "Bounty",
     "weight": 255
+},
+{
+    "id": 15,
+    "type": "pasta",
+    "name": "Carbonara",
+    "weight": 300
+},
+{
+    "id": 16,
+    "type": "desert",
+    "name": "Tiramisu",
+    "weight": 205
+},
+{
+    "id": 17,
+    "type": "wine",
+    "name": "Riesling",
+    "weight": 250
+},
+{
+    "id": 18,
+    "type": "beer",
+    "name": "Dark Chernihivske",
+    "weight": 450
+},
+{
+    "id": 19,
+    "type": "beer",
+    "name": "Bud",
+    "weight": 500
+},
+{
+    "id": 20,
+    "type": "drink",
+    "name": "Pepsi",
+    "weight": 300
+},
+{
+    "id": 21,
+    "type": "drink",
+    "name": "Coca Cola",
+    "weight": 300
+},
+{
+    "id": 22,
+    "type": "drink",
+    "name": "Fanta",
+    "weight": 350
+},
+{
+    "id": 23,
+    "type": "drink",
+    "name": "Mineral Ochka",
+    "weight": 500
 }
 
-]
+]`

@@ -1,10 +1,8 @@
-
 class API_prot 
 {
-    constructor ( path )
+    constructor ( )
     {
-        this.file = require ( path );
-        this.items = JSON.parse ( this.file );
+        this.items = JSON.parse ( data );
         this.byType = null;
     };
 
