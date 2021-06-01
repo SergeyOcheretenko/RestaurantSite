@@ -139,10 +139,10 @@ input {
   height: 92px;
   line-height: 92px;
   font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
 }
 
 .navigation-button:hover {
@@ -252,6 +252,8 @@ color: #FFFFFF;
   border: none;
 }
 
+.contact-send-message:hover,
+.book-a-table-button:hover,
 .book-table-button:hover {
   cursor: pointer;
   background-color: #ff4800;
@@ -382,7 +384,7 @@ color: #FFFFFF;
 .rectangle-our-team {
   position: absolute;
   left: 1030px;
-  top: 1825px;
+  top: 1818px;
 }
 
 .our-team-main-text {
@@ -446,7 +448,7 @@ color: #FFFFFF;
 .rectangle-book-a-table {
   position: absolute;
   left: 390px;
-  top: 2460px;
+  top: 2452+px;
 }
 
 .input-row {
@@ -617,7 +619,7 @@ color: #FFFFFF;
 .rectangle-menu {
   position: absolute;
   left: 700px;
-  top: 3748px;
+  top: 3740px;
 }
 
 .menu-subtitle {
@@ -670,7 +672,7 @@ color: #FFFFFF;
 }
 
 .more {
-  margin-top: 10px;
+  margin-top: 30px;
   width: 100%;
   text-align: center;
   color: #333333;
