@@ -65,15 +65,15 @@ class UI {
     else this.formError(responce);
   };
   static formSuccess () {
-    const formfield = document.getElementsByClassName('contacts-section')[0];
+    const formfield = document.getElementsByClassName('book-a-table-main-content')[0];
     const succesText = document.createElement('h2');
-    succesText.className = 'contacts-title';
+    succesText.className = 'book-a-table-title';
     succesText.innerText = 'Sent succesfully!';
     formfield.innerHTML = '';
     formfield.appendChild(succesText);
   };
   static formError (key) {
-    const field = document.getElementsByClassName('contacts-subtitle')[0];
-    field.innerText = `Validation error in ${key}!`;
+    const field = document.getElementsByClassName('book-a-table-title')[0];
+    field.innerText = `Error in ${key}!`;
   };
 };
