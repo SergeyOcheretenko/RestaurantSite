@@ -41,7 +41,11 @@ server.on('request', (req, res) => {
             file.pipe(res);
             break;
         case 'POST':
-            //saving info
+            const jsonText = fs.readFile('./forms.json');
+            let text = JSON.parse(jsonText);
+            text.push(JSON.parse(req.body));
+            const result = JSON.stringify(text);
+            fs.writeFile('./forms.json', result);
             break;
     }
     
