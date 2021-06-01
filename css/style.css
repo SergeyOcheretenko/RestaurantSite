@@ -1,3 +1,351 @@
+/* Adding fonts */
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/Proxima+Nova+Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Banny";
+  src: url("../fonts/Banny-Round.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Banny Bold";
+  src: url("../fonts/Banny-BoldRound.otf") format("opentype");
+}
+
 body {
+  background-color: #e5e5e5;
   font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 1440px;
+  background-color: white;
+}
+
+header {
+  width: 1440px;
+  height: 800px;
+  background: url(../img/header-bg.png) no-repeat;
+  background-size: 100%;
+}
+
+/* Styles for about us section */
+.about-us-section {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Yellow rectangle */
+.rectangle {
+  position: absolute;
+  width: 59.19px;
+  height: 5px;
+  left: 360px;
+  top: 1113px;
+  background: #e8c300;
+  border-radius: 50px;
+  margin: 0px;
+}
+
+.about-us {
+  width: 600px;
+  margin: 217px 81px;
+  text-align: center;
+}
+
+.about-us-title {
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-us-image-section {
+  margin-top: 100px;
+}
+
+.about-us-image {
+  width: 475px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.yellow-border-box {
+  border: 20px solid #e8c300;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+.yellow-border-box-about-us {
+  position: absolute;
+  margin-top: 117.5px;
+  margin-right: 200px;
+  left: 1111px;
+}
+
+/* Styles for navigation buttons */
+.navigation {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+
+.left-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 80px;
+}
+
+.navigation-button {
+  width: 133px;
+  height: 100px;
+  color: white;
+  line-height: 100px;
+}
+
+.image-anchor {
+  margin: 25px 35px;
+  margin-bottom: 0px;
+  width: 150px;
+}
+
+/* Style for horizontal lines*/
+.left-horizontal-line {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 530px;
+  position: absolute;
+  left: 80px;
+  top: 100px;
+}
+
+.right-horizontal-line {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 530px;
+  position: absolute;
+  left: 845px;
+  top: 100px;
+}
+
+/* Styles for aside text in header*/
+.aside-section-text {
+  position: absolute;
+  left: 0px;
+  top: 450px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+
+  transform: rotate(-90deg);
+}
+
+/* Styles for word "RESTAURANT" */
+.restaurant-type-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-top: 150px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styles for restaurant name */
+.restaurant-name-title-section {
+  text-align: center;
+  margin: 0px 80px;
+}
+
+.restaurant-name-title {
+  margin: 0px 80px;
+  font-family: Banny;
+  font-size: 96px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Styles for two buttons under the tutle */
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Universal button's styles */
+.header-button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.book-table-button,
+.explore-button {
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.book-table-button {
+  margin-left: 500px;
+  background-color: #e8c300;
+  border: none;
+}
+
+.explore-button {
+  margin-left: 40px;
+  background: rgba(0, 0, 0, 0);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Style for contacts bar */
+.messenger-contacts {
+  height: 220px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60px;
+  height: 220px;
+  left: 1300px;
+  top: 340px;
+}
+
+.messenger {
+  width: 60px;
+  height: 60px;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  line-height: 60px; /* подробнее про line-height */
+  text-align: center; /* выравнять текст по середине по горизонтали */
+  background: rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+}
+
+/* Style for our team section */
+.our-team-section {
+  background: url(../img/specialty-bg.png) no-repeat;
+  height: 676px;
+}
+
+/* Styles for title "Our team" */
+.our-team-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Style for other content in our team section */
+.our-team-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.master-chef-image {
+  margin: 0px;
+  margin-left: 195px;
+  filter: drop-shadow(0px 0px 50px #000000);
+  border-radius: 5px;
+  width: 475px;
+  height: 475px;
+}
+
+.our-team-text {
+  padding: 2px 10px;
+  margin-top: 120px;
+  margin-left: 70px;
+  width: 600px;
+  height: 240px;
+}
+
+.master-chef-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Banny;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.master-chef-subtitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rectangle-our-team {
+  background-color: #e8c300;
+  border-radius: 50px;
+  width: 59.19px;
+  height: 5px;
+  margin: 0px;
+  position: absolute;
+  left: 1030px;
+  top: 1825px;
+}
+
+.our-team-main-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yellow-border-box-our-team {
+  position: absolute;
+  left: 80px;
+  top: 1765px;
+
+  border: 20px solid #e8c300;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 100px #000000);
+  border-radius: 5px;
 }
