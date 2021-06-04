@@ -1,10 +1,39 @@
 class UI {
+  static clear(element) {
+    element.innerHTML = '';
+  };
+  static clear_menu() {
+    UI.clear(UI.menu);
+  }
   static load_page_content() {
     this.menu = document.getElementsByClassName('menu')[ 0 ];
     this.clear_menu();
     this.checker = false;
     this.last = null;
+    this.more = document.createElement('div');
+    this.more.className = 'more';
+    this.more.onclick = UI.viewMoreLess;
     this.draw_menu(api.items);
+  };
+  static new_menu_element(info) {
+    const element = document.createElement('div');
+    element.className = 'menu-item';
+    const container = document.createElement('div');
+    const name = document.createElement('h3');
+    name.className = 'dish-name';
+    name.innerText = info.name;
+    container.appendChild(name);
+    element.appendChild(container);
+    const desc = document.createElement('p');
+    desc.className = 'dish-describe';
+    if (info.type != 'pizza') desc.innerText = 'Integer ullamcorper neque eu purus';
+    else desc.innerText = 'Diameter ' + info.dm + ' dm.';
+    container.appendChild(desc);
+    const weight = document.createElement('h3');
+    weight.className = 'price-item';
+    weight.innerText = info.weight + 'g.';
+    element.appendChild(weight);
+    return element;
   };
   static draw_menu(bigArray) {
     this.last = bigArray;
@@ -16,55 +45,33 @@ class UI {
     array = array.slice(0, rows * onerow);
     for ( let one of array )
     {
-      const element = document.createElement('div');
-      element.className = 'menu-item';
-      const container = document.createElement('div');
-      const name = document.createElement('h3');
-      name.className = 'dish-name';
-      name.innerText = one.name;
-      container.appendChild(name);
-      element.appendChild(container);
-      const desc = document.createElement('p');
-      desc.className = 'dish-describe';
-      if (one.type != 'pizza') desc.innerText = 'Integer ullamcorper neque eu purus';
-      else desc.innerText = 'Diameter ' + one.dm + ' dm.';
-      container.appendChild(desc);
-      const weight = document.createElement('h3');
-      weight.className = 'price-item';
-      weight.innerText = one.weight + 'g.';
-      element.appendChild(weight);
-      this.menu.appendChild(element);
+      const element = UI.new_menu_element(one);
+      UI.menu.appendChild(element);
     };
-    const more = document.createElement('div');
-    more.className = 'more';
-    more.onclick = UI.viewMoreLess;
-    if (!this.checker) more.innerText = 'View more';
-    else more.innerText = 'View less';
-    if (bigArray.length > 21) this.menu.appendChild(more);
+    if (!this.checker) UI.more.innerText = 'View more';
+    else UI.more.innerText = 'View less';
+    if (bigArray.length > 21) UI.menu.appendChild(UI.more);
   };
   static viewMoreLess() {
     UI.checker = !UI.checker;
     UI.clear_menu();
     UI.draw_menu(UI.last);
   };
-  static clear_menu() {
-    this.menu.innerHTML = '';
-  };
   static switch_type(type) {
     const arr = api.getByType(type);
-    this.clear_menu();
-    this.draw_menu(arr);
+    UI.clear_menu();
+    UI.draw_menu(arr);
   };
   static sort() {
-    this.clear_menu();
-    this.draw_menu(api.sortByWeigth());
+    UI.clear_menu();
+    UI.draw_menu(api.sortByWeigth());
   };
   static formInfo( numb ) {
     let responce;
     if ( !numb ) responce = form.getBookTableData();
     else responce = form.getMessage();
-    if ( !responce ) this.formSuccess(numb);
-    else this.formError(responce, numb);
+    if ( !responce ) UI.formSuccess(numb);
+    else UI.formError(responce, numb);
   };
   static formSuccess (numb) {
     const formfield = document.getElementsByClassName('formfield')[numb];
