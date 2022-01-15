@@ -23,10 +23,26 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-main {
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  background: #fff;
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* main {
   width: 1440px;
   background-color: white;
-}
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  background: #fff;
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}*/
+
 
 a {
   text-decoration: none;
