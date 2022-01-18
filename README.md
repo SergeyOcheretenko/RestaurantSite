@@ -10,6 +10,5 @@ FICT, KPI, 2021.
 
 <!-- Copy-paste in your Readme.md file -->
 <a href = "https://github.com/SergeyOcheretenko/RestaurantSite/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=SergeyOcheretenko/RestaurantSite" />
+  <img height="50px" src = "https://contrib.rocks/image?repo=SergeyOcheretenko/RestaurantSite" />
 </a>
-Made with [contributors-img](https://contrib.rocks).
