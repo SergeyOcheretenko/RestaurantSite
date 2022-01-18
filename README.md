@@ -7,3 +7,9 @@ FICT, KPI, 2021.
 Автори - Сергій Очеретенко та Кузьміна Анастасія
 
 Актуальний код для github.pages - у папці js. Абстрактний сервер - у папці server-js.
+
+<!-- Copy-paste in your Readme.md file -->
+<a href = "https://github.com/SergeyOcheretenko/RestaurantSite/graphs/contributors">
+<img src = "https://contrib.rocks/image?repo = SergeyOcheretenko/RestaurantSite"/>
+</a>
+Made with [contributors-img](https://contrib.rocks).
